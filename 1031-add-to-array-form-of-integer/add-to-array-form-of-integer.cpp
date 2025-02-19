@@ -6,7 +6,7 @@ public:
         int carry = 0;
         int i = n - 1;
 
-        while (i >= 0 || k > 0 || carry > 0) {
+        while (i >= 0 || k > 0 ) {
             if (i >= 0) {
                 k += nums[i];
                 i--;
