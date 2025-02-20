@@ -1,9 +1,8 @@
 class Solution {
 public:
-    // Convert binary string to decimal integer
     int binaryToDecimal(const string& s) {
         int dec_value = 0;
-        int base = 1; // 2^0
+        int base = 1;
 
         for (int i = s.size() - 1; i >= 0; i--) {
             if (s[i] == '1') {
@@ -14,7 +13,6 @@ public:
         return dec_value;
     }
 
-    // Convert decimal number to n-length binary string
     string decToBinary(int n, int length) {
         string bin = "";
         while (n > 0) {
