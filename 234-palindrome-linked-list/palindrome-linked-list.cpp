@@ -12,7 +12,6 @@ class Solution {
 public:
     bool isPalindrome(ListNode* head) {
         vector<int>num1;
-        vector<int>num2;
         ListNode* current = head;
         ListNode* next = NULL;
         int flag=0;
