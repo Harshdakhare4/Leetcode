@@ -1,9 +1,10 @@
 class Solution {
 public:
-    string gcdOfStrings(const string& s1, const string& s2)
-    {
-        return (s1 + s2 == s2 + s1)  
-		    ? s1.substr(0, gcd(size(s1), size(s2)))
-			: "";
+    string gcdOfStrings(string str1, string str2) {
+        if (str1 + str2 != str2 + str1) {
+        return "";
+    }
+    int gcdLength = __gcd(str1.length(), str2.length());
+    return str1.substr(0, gcdLength);
     }
 };
