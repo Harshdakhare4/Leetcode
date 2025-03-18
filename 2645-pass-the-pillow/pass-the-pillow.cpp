@@ -1,7 +1,7 @@
 class Solution {
 public:
     int passThePillow(int n, int time) {
-        if (time < n - 1) { // Pillow moves forward
+        if (time < n ) { // Pillow moves forward
             return time + 1;
         } else {
             int m = time / (n - 1); // Number of complete forward/backward passes
